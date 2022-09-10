@@ -18,6 +18,11 @@ export default function experience() {
         />
       </div>
       <Tabs />
+      <div className="experience_div space-y-2">
+        <div className="experience_content">
+          <p>Now</p>
+        </div>
+      </div>
     </div>
   );
 }

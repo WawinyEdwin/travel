@@ -1,5 +1,5 @@
 import { LockClosedIcon } from "@heroicons/react/20/solid";
-
+import Link from "next/link";
 
 export default function Example() {
   return (
@@ -15,7 +15,6 @@ export default function Example() {
       <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
-  
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
               Sign in to your account
             </h2>
@@ -72,12 +71,9 @@ export default function Example() {
               <br />
 
               <div className="text-sm">
-                <a
-                  href="/forgot-password"
-                  className="font-medium text-indigo-600 hover:text-indigo-500"
-                >
-                  Forgot your password?
-                </a>
+                <p className="font-medium text-indigo-600 hover:text-indigo-500">
+                  <Link href="/forgot-password">Forgot your password?</Link>
+                </p>
               </div>
             </div>
 

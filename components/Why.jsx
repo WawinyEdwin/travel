@@ -4,9 +4,9 @@ import React from "react";
 export default function Why() {
   return (
     <div>
-      <div className="container mx-auto">
+      <div className="mx-auto items-center justify-center text-center  py-0 px-3">
         <div className="text-center">
-          <h1>Expert Insight</h1>
+          <h1 className="text-3-xl">Expert Insight</h1>
           <br />
           <h2>
             AFRICA IS AN INCREDIBLE PLACE TO VISIT, CONSISTENTLY A TOP 5
@@ -30,11 +30,16 @@ export default function Why() {
           </p>
         </div>
         <div className="why_image text-center justify">
-          <h1>PRIVATE CHARTERS</h1>
-          <p>
-            WE HAVE DIRECT ACCESS TO A WIDE RANGE OF AIRCRAFT AND YACHTS
-            AVAILABLE FOR CHARTER AT EXCEPTIONAL RATES UNRIVALED.
-          </p>
+          <div className="experience_content space-y-2">
+            <h1>PRIVATE CHARTERS</h1>
+            <p>
+              WE HAVE DIRECT ACCESS TO A WIDE RANGE OF AIRCRAFT AND YACHTS
+              AVAILABLE FOR CHARTER AT EXCEPTIONAL RATES UNRIVALED.
+            </p>
+            <button className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
+              Book The Real Experience.
+            </button>
+          </div>
         </div>
       </div>
     </div>

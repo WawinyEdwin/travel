@@ -1,13 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import Destination from "../components/Destination";
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 import Tabs from "../components/Tabs";
 
 export default function destinations() {
   return (
-    <div>
-      <Navbar />
+    <Layout>
       <div>
         <Image
           src="/hotel.jpg"
@@ -20,6 +19,9 @@ export default function destinations() {
       </div>
       <Tabs />
       <Destination />
-    </div>
+      <div className="div_with_image">
+        
+      </div>
+    </Layout>
   );
 }

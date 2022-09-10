@@ -1,5 +1,6 @@
 import { LockClosedIcon } from "@heroicons/react/20/solid";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function Signup() {
   return (
@@ -118,18 +119,20 @@ export default function Signup() {
               </button>
               <br />
 
-              <p className="group justify-center">
-                Existing Explorer?{" "}
-                <a href="/signin" className="text-blue-700">
-                  Sign In
-                  <span className="left-0 flex items-center pl-3">
-                    <ArrowRightIcon
-                      className="h-5 w-5 text-blue-500"
-                      aria-hidden="true"
-                    />
-                  </span>
-                </a>
-              </p>
+              <div className="text-center">
+                <p className="group justify-center">
+                  Existing Explorer?{" "}
+                  <p className="text-blue-700">
+                    <Link href="/signin">Sign In</Link>
+                    <span className="flex items-center">
+                      <ArrowRightIcon
+                        className="h-5 w-5 text-blue-500"
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </p>
+                </p>
+              </div>
             </div>
           </form>
         </div>

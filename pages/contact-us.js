@@ -1,12 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Navbar from "../components/Navbar";
+import Layout from '../components/Layout'
 import TravelForm from "../components/TravelForm";
 
 export default function contactUs() {
   return (
-    <div>
-      <Navbar />
+    <Layout>
       <div>
         <Image
           src="/zebra.jpg"
@@ -17,7 +16,7 @@ export default function contactUs() {
           alt="experience"
         />
       </div>
-      {/* <TravelForm /> */}
-    </div>
+      <TravelForm />
+    </Layout>
   );
 }

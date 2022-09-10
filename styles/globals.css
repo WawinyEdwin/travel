@@ -4,7 +4,6 @@
 @tailwindcss forms;
 @tailwindcss aspect-ratio;
 
-
 html,
 body {
   padding: 0;
@@ -49,7 +48,26 @@ a {
 }
 
 .why_image {
-  background-image: url('/public/flight.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("https://i.postimg.cc/qRWyNyQ5/flight.jpg");
+  height: 400px;
+  width: 100%;
+}
+
+.div_with_image {
+  background-image: url("https://i.postimg.cc/TwfBZ5nB/parallax-red-sunset.jpg");
+  height: 400px;
+  width: 100%;
+}
+
+.experience_div {
+  background-image: url("https://i.postimg.cc/g0XvmgHZ/parallax-couple-on-boat.png");
+  height: 400px;
+  width: 100%;
+}
+
+.experience_content {
+  z-index: 2;
+  color: #ffffff;
+  
+  
 }
