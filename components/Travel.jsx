@@ -101,7 +101,7 @@ export default function Example() {
               <li key={breadcrumb.id}>
                 <div className="flex items-center">
                   <p className="mr-2 text-sm font-medium text-gray-900">
-                    <Link href={breadcrumb.href}>{breadcrumb.name}</Link>
+                    <Link href="/">{breadcrumb.name}</Link>
                   </p>
                   <svg
                     width={16}
