@@ -27,7 +27,7 @@ export default function Footer() {
         </p>
         <p className="text-base font-medium text-gray-500 hover:text-gray-900">
           <svg
-            class="w-6 h-6 text-blue-600 fill-current"
+            className="w-6 h-6 text-blue-600 fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >

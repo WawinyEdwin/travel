@@ -10,10 +10,10 @@ function classNames(...classes) {
 export default function Home() {
   return (
     <div>
-      <section class="relative h-screen flex flex-col items-center justify-center text-center text-white py-0 px-3">
-        <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+      <section className="relative h-screen flex flex-col items-center justify-center text-center text-white py-0 px-3">
+        <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
           <video
-            class="min-w-full min-h-full absolute object-cover"
+            className="min-w-full min-h-full absolute object-cover"
             src="https://josecuono.dev/video1.mp4"
             type="video/mp4"
             autoplay
@@ -21,8 +21,8 @@ export default function Home() {
             loop
           ></video>
         </div>
-        <div class="video-content space-y-2">
-          <p class="font-light text-transform: lowercase">
+        <div className="video-content space-y-2">
+          <p className="font-light text-transform: lowercase">
             WITHIN THE EXPANSIVE WILDS OF THE AFRICAN BUSHVELD <br /> LIES A
             WORLD UNLIKE ANY OTHER: <br />
             IT IS, QUITE SIMPLY, A MAGNIFICENT WORLD, <br />

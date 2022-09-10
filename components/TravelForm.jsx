@@ -14,7 +14,7 @@ export default function TravelForm() {
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
                 className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-first-name"
+                htmlFor="grid-first-name"
               >
                 Full Names
               </label>
@@ -28,7 +28,7 @@ export default function TravelForm() {
             <div className="w-full md:w-1/2 px-3">
               <label
                 className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-last-name"
+                htmlFor="grid-last-name"
               >
                 Email Address
               </label>
@@ -44,7 +44,7 @@ export default function TravelForm() {
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
                 className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-first-name"
+                htmlFor="grid-first-name"
               >
                 Phone Number
               </label>
@@ -58,7 +58,7 @@ export default function TravelForm() {
             <div className="w-full md:w-1/2 px-3">
               <label
                 className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-last-name"
+                htmlFor="grid-last-name"
               >
                 How many people are in your party
               </label>
@@ -70,11 +70,11 @@ export default function TravelForm() {
               />
             </div>
           </div>
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3">
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
               <label
-                class="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-password"
+                className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+              htmlFor="grid-password"
               >
                 Do you have any specific interests, such as golf, photography,
                 or wine tasting that you would like to include in your travel
@@ -85,44 +85,44 @@ export default function TravelForm() {
                 id=""
                 cols="30"
                 rows="5"
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               ></textarea>
             </div>
           </div>
-          <div class="flex flex-wrap -mx-3 mb-2">
-            <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+          <div className="flex flex-wrap -mx-3 mb-2">
+            <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
               <label
-                class="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-city"
+                className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-city"
               >
                 Is this your first Visit to Kenya?
               </label>
               <input
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-city"
                 type="text"
                 placeholder="choice"
               />
             </div>
-            <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+            <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
               <label
-                class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-state"
+                className="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-state"
               >
                 Are you traveling for a particular occasion?
               </label>
-              <div class="relative">
+              <div className="relative">
                 <select
-                  class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-state"
                 >
                   <option>yes</option>
                   <option>no</option>
                   <option>other</option>
                 </select>
-                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                   <svg
-                    class="fill-current h-4 w-4"
+                    className="fill-current h-4 w-4"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                   >
@@ -131,26 +131,26 @@ export default function TravelForm() {
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+            <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
               <label
-                class="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-zip"
+                className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-zip"
               >
                 Is anyone in your party under 18?
               </label>
               <input
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-zip"
                 type="text"
                 placeholder="90210"
               />
             </div>
           </div>
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3">
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
               <label
-                class="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-password"
+                className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-password"
               >
                 Additional Info?
               </label>
@@ -159,7 +159,7 @@ export default function TravelForm() {
                 id=""
                 cols="30"
                 rows="5"
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               ></textarea>
             </div>
           </div>
