@@ -81,7 +81,7 @@ export default function Signup() {
                   htmlFor="remember-me"
                   className="ml-2 block text-sm text-gray-900"
                 >
-                  I Agree to Travel's <a href="#">Terms of Service</a> and{" "}
+                  I Agree to Travel&apos;s <a href="#">Terms of Service</a> and{" "}
                   <a href="">Privacy Policy</a>
                 </label>
               </div>

@@ -16,7 +16,7 @@ export default function Home() {
             className="min-w-full min-h-full absolute object-cover"
             src="https://josecuono.dev/video1.mp4"
             type="video/mp4"
-            autoplay
+            autoPlay
             muted
             loop
           ></video>
