@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Navbar from "../components/Navbar";
 import Tabs from "../components/Tabs";
@@ -7,10 +8,12 @@ export default function experience() {
     <div>
       <Navbar />
       <div>
-        <img
+        <Image
           src="/wildbeest.jpg"
-          height={300}
-          width={"auto"}
+          layout="responsive"
+          objectFit="contain"
+          width={900}
+          height={299}
           alt="experience"
         />
       </div>

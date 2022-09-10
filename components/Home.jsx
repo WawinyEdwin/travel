@@ -1,5 +1,6 @@
 import { LockClosedIcon } from "@heroicons/react/20/solid";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 import React from "react";
 
 function classNames(...classes) {
@@ -31,7 +32,7 @@ export default function Home() {
             type="submit"
             className="group relative flex w-full justify-center rounded-md border border-blue bg-white py-2 px-4 text-sm font-medium text-blue-500 hover:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
-            Plan Your Next Adventure
+            <Link href="/experience">Plan Your Next Adventure</Link>
             <span className="absolute inset-y-0 right-10 flex items-center pl-3">
               <ArrowRightCircleIcon
                 className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"

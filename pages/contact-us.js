@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Navbar from "../components/Navbar";
 import TravelForm from "../components/TravelForm";
@@ -7,9 +8,16 @@ export default function contactUs() {
     <div>
       <Navbar />
       <div>
-        <img src="/zebra.jpg" height={300} width={"auto"} alt="experience" />
+        <Image
+          src="/zebra.jpg"
+          layout="responsive"
+          objectFit="contain"
+          width={900}
+          height={299}
+          alt="experience"
+        />
       </div>
-      <TravelForm />
+      {/* <TravelForm /> */}
     </div>
   );
 }
