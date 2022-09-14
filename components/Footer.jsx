@@ -9,7 +9,7 @@ export default function Footer() {
     bg-white
     p-4"
     >
-      <div className="flex text-center items-center justify-between  py-6 md:justify-center md:space-x-10">
+      <div className="lg:flex sm:grid text-center items-center justify-between  py-6 md:justify-center md:space-x-10">
         <p className="text-base font-medium text-blue-500 ">
           &copy; The Travel Company
         </p>
