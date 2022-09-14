@@ -4,6 +4,17 @@ import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
+import { ChartBarIcon, HomeIcon } from "@heroicons/react/20/solid";
+
+const solutions = [
+  {
+    name: "Home",
+    description:
+      "Get a better understanding of where your traffic is coming from.",
+    href: "/",
+    icon: HomeIcon,
+  },
+];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -17,9 +28,9 @@ export default function Navbar() {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <span className="sr-only">Travel</span>
             <Image
-              className="h-8 w-auto sm:h-10"
+              className="h-15 w-auto sm:h-10 rounded"
               src="/elephant.jpg"
-              alt=""
+              alt="travel"
               height={20}
               width={100}
             />
@@ -79,13 +90,38 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="mt-6">
-                <nav className="grid gap-y-8"></nav>
+                <nav className="grid gap-y-8">
+                  {solutions.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
+                    >
+                      <item.icon
+                        className="h-6 w-6 flex-shrink-0 text-indigo-600"
+                        aria-hidden="true"
+                      />
+                      <span className="ml-3 text-base font-medium text-gray-900">
+                        {item.name}
+                      </span>
+                    </a>
+                  ))}
+                </nav>
               </div>
             </div>
-            <div className="space-y-6 py-6 px-5">
+            <div className="space-y-3 py-5 px-5">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <p className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  <Link href="/contact-us">Contact</Link>
+                  <Link href="/contact-us">Get In Contact</Link>
+                </p>
+                <p className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  <Link href="/why-africa">Why Africa</Link>
+                </p>
+                <p className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  <Link href="/experience">Experience It</Link>
+                </p>
+                <p className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  <Link href="/destinations">Explore</Link>
                 </p>
               </div>
               <div>
@@ -93,7 +129,7 @@ export default function Navbar() {
                   <Link href="/signup">Sign up</Link>
                 </p>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{" "}
+                  Existing Explorer?{" "}
                   <p className="text-indigo-600 hover:text-indigo-500">
                     <Link href="/signin">Sign in</Link>
                   </p>
