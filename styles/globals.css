@@ -49,18 +49,22 @@ a {
 
 .why_image {
   background-image: url("https://i.postimg.cc/qRWyNyQ5/flight.jpg");
-  height: 400px;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  height: 500px;
   width: 100%;
 }
 
 .div_with_image {
   background-image: url("https://i.postimg.cc/TwfBZ5nB/parallax-red-sunset.jpg");
+  background-size: cover;
   height: 400px;
   width: 100%;
 }
 
 .experience_div {
   background-image: url("https://i.postimg.cc/g0XvmgHZ/parallax-couple-on-boat.png");
+  background-size: cover;
   height: 400px;
   width: 100%;
 }

@@ -5,6 +5,29 @@ import Navbar from "../components/Navbar";
 import Tabs from "../components/Tabs";
 import Why from "../components/Why";
 
+const links = [
+  {
+    name: "Expert Insight",
+    href: "/why-africa"
+  },
+  {
+    name: "Private Charters",
+    href: "/why-africa"
+  },
+  {
+    name: "VIP Access",
+    href: "/why-africa"
+  },
+  {
+    name: "Testimonials",
+    href: "/why-africa"
+  },
+  {
+    name: "Giving Back",
+    href: "/why-africa"
+  },
+]
+
 export default function whyAfrica() {
   return (
     <Layout>
@@ -16,8 +39,7 @@ export default function whyAfrica() {
         width={900}
         height={299}
       />
-
-      <Tabs />
+      <Tabs links={links} />
       <Why />
     </Layout>
   );

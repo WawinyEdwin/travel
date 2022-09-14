@@ -3,6 +3,29 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Tabs from "../components/Tabs";
 
+const links = [
+  {
+    name: "Ultimate Luxury",
+    href: "/experience"
+  },
+  {
+    name: "Yatch Charters",
+    href: "/experience"
+  },
+  {
+    name: "Families",
+    href: "/experience"
+  },
+  {
+    name: "Romance",
+    href: "/experience"
+  },
+  {
+    name: "Groups|Clubs",
+    href: "/experience"
+  },
+]
+
 export default function experience() {
   return (
     <div>
@@ -17,8 +40,8 @@ export default function experience() {
           alt="experience"
         />
       </div>
-      <Tabs />
-      <div className="experience_div space-y-2">
+      <Tabs links={links} />
+      <div className="experience_div ">
         <div className="experience_content">
           <p>Now</p>
         </div>
