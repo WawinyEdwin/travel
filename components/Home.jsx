@@ -14,7 +14,7 @@ export default function Home() {
         <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
           <video
             className="min-w-full min-h-full absolute object-cover"
-            src="https://josecuono.dev/video1.mp4"
+            src="/wolf.mp4"
             type="video/mp4"
             autoPlay
             muted
@@ -32,7 +32,7 @@ export default function Home() {
             type="submit"
             className="group relative flex w-full justify-center rounded-md border border-blue bg-white py-2 px-4 text-sm font-medium text-blue-500 hover:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
-            <Link href="/experience">Plan Your Next Adventure</Link>
+            <Link href="/contact-us">Plan Your Next Adventure</Link>
             <span className="absolute inset-y-0 right-10 flex items-center pl-3">
               <ArrowRightCircleIcon
                 className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
