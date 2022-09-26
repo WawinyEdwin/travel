@@ -70,9 +70,9 @@ export default function Why() {
           </p>
         </div>
         <div className="grid grid-cols-3 ">
-          <Image src={"/chopper.png"} width={200} height={200} />
-          <Image src={"/safari.png"} width={200} height={200} />
-          <Image src={"/chopper.png"} width={300} height={300} />
+          <Image src={"/chopper.png"} width={200} height={200} alt="Chooper" />
+          <Image src={"/safari.png"} width={200} height={200} alt="safari" />
+          <Image src={"/chopper.png"} width={300} height={300} alt="chopper" />
         </div>
       </div>
       {/* <div className="why_image text-center justify">
